@@ -29,7 +29,89 @@
   background-color: aqua;
 }
 
+.home button:hover {
+  opacity: 0.8;
+}
+
 .home p {
   font-size: 20px;
   color: white;
+}
+
+.dashboard {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(16, 16, 145);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashboard h1 {
+  font-size: 50px;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+.dashboardController {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+
+.dashboardController button {
+  font-size: 30px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.dashboard button:hover {
+  opacity: 0.8;
+}
+
+.dashboardContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.dashboardCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+
+.dashboardCard p {
+  font-size: 40px;
+}
+
+/* .dashboardCard .functionalities {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
+
+.dashboardCard .functionalities button {
+  font-size: 30px;
+  padding: 5px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
 }

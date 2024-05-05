@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useQuestionContext } from "../contexts/QuestionContext";
 import apiRequest from "../lib/apiRequest";
+import DashboardController from "../components/DashboardController";
+import DashboardContainer from "../components/DashboardContainer";
 
 const Dashboard = () => {
   const { questions, setQuestions } = useQuestionContext();
@@ -16,8 +18,10 @@ const Dashboard = () => {
     fetchQuestions();
   }, []);
   return (
-    <div>
+    <div className="dashboard">
       <h1>Dahboard</h1>
+      <DashboardController />
+      <DashboardContainer />
     </div>
   );
 };

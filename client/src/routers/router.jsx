@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
     element: <Edit />,
   },
   {
-    path: "game/:type",
+    path: "game",
     element: <Game />,
   },
   {
