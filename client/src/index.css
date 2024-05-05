@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -100,12 +102,6 @@
   font-size: 40px;
 }
 
-/* .dashboardCard .functionalities {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-} */
-
 .dashboardCard .functionalities button {
   font-size: 30px;
   padding: 5px 20px;
@@ -114,4 +110,85 @@
   border-radius: 10px;
   margin-left: 20px;
   cursor: pointer;
+}
+
+.add {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(16, 16, 145);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.add h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 50px;
+}
+
+.add input {
+  border: none;
+  outline: none;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.addContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 500px;  
+  gap: 40px;
+}
+
+.addAnswer {
+  color: white;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.addAnswer p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.addAnswer .dataAnswer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addAnswer .dataAnswer #firstAnswerInput {
+  font-size: 20px;
+  width: 70%;
+}
+
+.addAnswer .dataAnswer #secondAnswerInput {
+  font-size: 20px;
+  width: 20%;
+}
+
+.add button {
+  font-size: 30px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.add button:hover {
+  opacity: .8;
 }
