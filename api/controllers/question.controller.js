@@ -2,9 +2,8 @@ import Question from "../models/question.model.js";
 
 export const getQuestions = async (req, res) => {
   try {
-    const type = req.params.type;
-    const questions = await Question.find({ type });
-    res.status(201).json({ questions });
+    const questions = await Question.find();
+    res.status(201).json(questions);
   } catch (error) {
     res
       .status(500)

@@ -3,7 +3,7 @@ import { addQuestion, deleteQuestion, editQuestion, getQuestions } from "../cont
 
 const router = express.Router();
 
-router.get("/getQuestions/:type", getQuestions);
+router.get("/getQuestions", getQuestions);
 router.post("/addQuestion", addQuestion);
 router.put("/editQuestion/:id", editQuestion);
 router.delete("/deleteQuestion/:id", deleteQuestion);
