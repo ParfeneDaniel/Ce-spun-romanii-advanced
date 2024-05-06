@@ -4,11 +4,14 @@ import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routers/router";
 import { QuestionContextProvider } from "./contexts/QuestionContext";
+import { AddQuestionContextProvider } from "./contexts/AddQuestionContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <QuestionContextProvider>
-      <RouterProvider router={router} />
+      <AddQuestionContextProvider>
+        <RouterProvider router={router} />
+      </AddQuestionContextProvider>
     </QuestionContextProvider>
   </React.StrictMode>
 );

@@ -5,7 +5,7 @@ import DashboardController from "../components/DashboardController";
 import DashboardContainer from "../components/DashboardContainer";
 
 const Dashboard = () => {
-  const { questions, setQuestions } = useQuestionContext();
+  const { setQuestions } = useQuestionContext();
   useEffect(() => {
     const fetchQuestions = async () => {
       try {

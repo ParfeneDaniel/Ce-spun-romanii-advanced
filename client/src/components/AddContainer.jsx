@@ -5,7 +5,7 @@ const AddContainer = () => {
   return (
     <div className="addContainer">
       {array.map((number, index) => (
-        <AddAnswer key={index} number={number + 1}/>
+        <AddAnswer key={index} number={number}/>
       ))}
     </div>
   );
