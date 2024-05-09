@@ -5,12 +5,19 @@ import { useNavigate } from "react-router-dom";
 
 const Add = () => {
   const navigate = useNavigate();
-  const { question, setQuestion, answers } = useAddQuestionContext();
+  const { question, setQuestion, answers, setAnswers } = useAddQuestionContext();
   const handleAddQuestionChange = (e) => {
     setQuestion(e.target.value);
   };
+  const removeNullAnswerOrPoints = () => {
+    const newAnswers = [...answers].filter(
+      (answer) => answer.answer != "" && answer.points != 0
+    );
+    setAnswers(newAnswers);
+  };
   const handleSaveQuestionClick = async (e) => {
     e.preventDefault();
+    removeNullAnswerOrPoints();
     try {
       const response = await apiRequest.post("/addQuestion", {
         question: question,
@@ -18,9 +25,10 @@ const Add = () => {
       });
       if (response.data.message) {
         navigate("/dashboard");
+        setAnswers([]);
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
   return (

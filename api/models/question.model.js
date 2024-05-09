@@ -9,11 +9,9 @@ const questionSchema = mongoose.Schema({
     {
       answer: {
         type: String,
-        required: true,
       },
       points: {
         type: Number,
-        required: true,
       },
     },
   ],
