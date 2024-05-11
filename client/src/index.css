@@ -23,14 +23,14 @@
 }
 
 .backgroundRound button {
-    margin-top: 150px;
-    width: 350px;
-    height: 50px;
-    font-size: 30px;
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
-    background-color: aqua;
+  margin-top: 150px;
+  width: 350px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: aqua;
 }
 
 .nameOfTeams {
@@ -61,3 +61,56 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.gameBackround {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(15, 15, 100);
+  color: rgb(221, 235, 24);
+}
+
+.gameBackround .points {
+  height: 75px;
+  border-bottom: 1px solid whitesmoke;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameBackround .points h2 {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(7, 150, 150);
+  text-align: center;
+  align-content: center;
+  color: whitesmoke;
+  border-radius: 20px;
+  font-size: 35px;
+}
+
+.gameBackround h1 {
+  height: 75px;
+  border-bottom: 1px solid whitesmoke;
+  text-align: center;
+  align-content: center;
+}
+
+.mainGame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameTeam {
+  width: 15%;
+  height: 600px;
+  border: 1px solid whitesmoke;
+}
+
+.gameAnswers {
+    width: 70%;
+}
+
+
