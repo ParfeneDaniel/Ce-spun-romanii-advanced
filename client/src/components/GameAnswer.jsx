@@ -2,13 +2,13 @@ import { useState } from "react";
 import { useGameContext } from "../context/GameContext";
 
 const GameAnswer = ({ answer, numberOfAnswer }) => {
-  const { setPoints } = useGameContext();
+  const { setPoints, scalePoints } = useGameContext();
   const [showAnswer, setShowAnswer] = useState(false);
   const handleRevealsClick = () => {
     if (!showAnswer) {
-      setPoints((prev) => prev + answer.points);
+      setPoints((prev) => prev + scalePoints * answer.points);
     } else {
-      setPoints((prev) => prev - answer.points);
+      setPoints((prev) => prev - scalePoints * answer.points);
     }
     setShowAnswer(!showAnswer);
   };

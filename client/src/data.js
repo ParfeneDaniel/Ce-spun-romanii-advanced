@@ -67,10 +67,10 @@ export const data = [
         answer: "Badescu",
         points: 5,
       },
-      {
+      /* {
         answer: "Deta",
         points: 5,
-      },
+      }, */
     ],
   },
   {

@@ -1,8 +1,33 @@
+import { useGameContext } from "../context/GameContext";
+
 const GameTeamController = ({ numberOfTeam }) => {
+  const {
+    redsTeam1,
+    redsTeam2,
+    setRedsTeam1,
+    setRedsTeam2,
+    setPointsTeam1,
+    setPointsTeam2,
+    points,
+  } = useGameContext();
+  const reds = [redsTeam1, redsTeam2];
+  const setReds = [setRedsTeam1, setRedsTeam2];
+  const currentReds = reds[numberOfTeam - 1];
+  const currentSetReds = setReds[numberOfTeam - 1];
+  const setPoints = [setPointsTeam1, setPointsTeam2];
+  const currentSetPoints = setPoints[numberOfTeam - 1];
+  const handleAddRedClick = () => {
+    if (currentReds < 3) {
+      currentSetReds((prev) => prev + 1);
+    }
+  };
+  const handleAddPointsClick = () => {
+    currentSetPoints((prev) => prev + points);
+  };
   return (
     <div className="gameTeamController">
-      <button>Red Team {numberOfTeam}</button>
-      <button>Add points to team {numberOfTeam}</button>
+      <button onClick={handleAddRedClick}>Red Team {numberOfTeam}</button>
+      <button onClick={handleAddPointsClick}>Add points to team {numberOfTeam}</button>
     </div>
   );
 };

@@ -62,14 +62,15 @@
   padding-right: 20px;
 }
 
-.gameBackround {
+.gameBackground {
   width: 100vw;
   height: 100vh;
   background-color: rgb(15, 15, 100);
   color: rgb(221, 235, 24);
+  position: relative;
 }
 
-.gameBackround .points {
+.gameBackground .points {
   height: 8%;
   border-bottom: 1px solid whitesmoke;
   align-content: center;
@@ -79,7 +80,7 @@
   justify-content: center;
 }
 
-.gameBackround .points h2 {
+.gameBackground .points h2 {
   width: 150px;
   height: 50px;
   background-color: rgb(7, 150, 150);
@@ -89,11 +90,27 @@
   font-size: 35px;
 }
 
-.gameBackround h1 {
+.gameBackground .question {
   height: 8%;
   border-bottom: 1px solid whitesmoke;
   text-align: center;
   align-content: center;
+  font-size: 40px;
+}
+
+.gameBackground .question button {
+  font-size: 30px;
+  width: 350px;
+  height: 50px;
+  background-color: rgb(7, 150, 150);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: rgb(221, 235, 24);
+  cursor: pointer;
+}
+
+.gameBackground .question h1 {
   font-size: 40px;
 }
 
@@ -135,9 +152,29 @@
   height: 125px;
 }
 
-.gameAnswers {
+.answers {
   width: 70%;
-  height: 650px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answers button {
+  width: 350px;
+  height: 50px;
+  font-size: 30px;
+  background-color: rgb(7, 150, 150);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: rgb(221, 235, 24);
+  cursor: pointer;
+}
+
+.gameAnswers {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,7 +185,7 @@
 
 .gameAnswer {
   width: 400px;
-  height: 75px;
+  height: 13%;
   background-color: rgb(7, 150, 150);
   display: flex;
   align-items: center;
@@ -165,6 +202,7 @@
   align-items: center;
   justify-content: center;
   border-right: 1px solid whitesmoke;
+  font-size: 35px;
 }
 
 .answerPoints {
@@ -173,69 +211,88 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 35px;
 }
 
 .closeAnswer p {
   background-color: rgb(149, 159, 13);
   color: white;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   text-align: center;
   align-content: center;
   border-radius: 10px;
+  font-size: 35px;
 }
 
 .gameAnswerEmpty {
   width: 350px;
-  height: 75px;
+  height: 13%;
   background-color: rgb(7, 150, 150);
   border-radius: 20px;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .gameController {
-    width: 100%;
-    height: 14%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gameTeamController {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 25%;
-    gap: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  gap: 25px;
 }
 
 .gameTeamController button {
-    font-size: 20px;
-    width: 200px;
-    background-color: rgb(7, 150, 150);
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: rgb(221, 235, 24);
-    height: 40px;
+  font-size: 20px;
+  width: 200px;
+  background-color: rgb(7, 150, 150);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: rgb(221, 235, 24);
+  height: 40px;
+  cursor: pointer;
 }
 
 .gameCentralController {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  width: 50%;
 }
 
 .gameCentralController button {
-    width: 200px;
-    height: 40px;
-    font-size: 20px;
-    background-color: rgb(7, 150, 150);
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    color: rgb(221, 235, 24);
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgb(7, 150, 150);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: rgb(221, 235, 24);
+  cursor: pointer;
+}
+
+.gameBigRed {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameBigRed img {
+  width: 100%;
+  height: 100%;
 }
