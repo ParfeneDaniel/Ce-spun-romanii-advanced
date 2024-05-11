@@ -26,14 +26,14 @@ export const data = [
         answer: "Cismas",
         points: 10,
       },
-      {
+      /* {
         answer: "Badescu",
         points: 5,
       },
       {
         answer: "Deta",
         points: 5,
-      },
+      }, */
     ],
   },
   {

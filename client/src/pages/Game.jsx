@@ -5,13 +5,13 @@ import { useGameContext } from "../context/GameContext";
 import { data } from "../data";
 
 const Game = () => {
-  const { points, currentQuestion } = useGameContext();
+  const { points, question } = useGameContext();
   return (
     <div className="gameBackround">
       <div className="points">
         <h2>{points}</h2>
       </div>
-      <h1>{data[currentQuestion].question}</h1>
+      <h1>{data[question].question}</h1>
       <div className="mainGame">
         <GameTeam numberOfTeam={1} />
         <GameAnswers />
