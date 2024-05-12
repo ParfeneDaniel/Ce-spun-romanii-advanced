@@ -1,6 +1,6 @@
 export const data = [
   {
-    question: "Carui profesor i-ai distruge masina, casa sau viata 1?",
+    question: "Carui profesor i-ai distruge masina 1?",
     answers: [
       {
         answer: "Vaida",
@@ -37,7 +37,7 @@ export const data = [
     ],
   },
   {
-    question: "Carui profesor i-ai distruge masina, casa sau viata 2?",
+    question: "Carui profesor i-ai distruge masina 2?",
     answers: [
       {
         answer: "Vaida",
@@ -74,7 +74,7 @@ export const data = [
     ],
   },
   {
-    question: "Carui profesor i-ai distruge masina, casa sau viata 3?",
+    question: "Carui profesor i-ai distruge masina 3?",
     answers: [
       {
         answer: "Vaida",
@@ -111,7 +111,7 @@ export const data = [
     ],
   },
   {
-    question: "Carui profesor i-ai distruge masina, casa sau viata 4?",
+    question: "Carui profesor i-ai distruge masina 4?",
     answers: [
       {
         answer: "Vaida",
