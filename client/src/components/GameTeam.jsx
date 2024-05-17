@@ -14,8 +14,7 @@ const GameTeam = ({ numberOfTeam }) => {
   return (
     <div className="gameTeam">
       <div className="teamDetails">
-        <p>Team {numberOfTeam}:</p>
-        <p>{currentTeam}</p>
+        <p id="teamName">{currentTeam}</p>
         <p>{currentPoints}</p>
       </div>
       <div className="imageContainer">

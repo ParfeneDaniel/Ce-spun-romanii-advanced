@@ -15,7 +15,7 @@ const Round = () => {
         <RoundTeam numberOfTeam={1} />
         <RoundTeam numberOfTeam={2} />
       </div>
-      <button onClick={handleClick}>Start round {round}</button>
+      <button onClick={handleClick}>Start</button>
     </div>
   );
 };

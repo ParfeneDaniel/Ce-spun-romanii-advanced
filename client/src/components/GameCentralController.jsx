@@ -48,9 +48,9 @@ const GameCentralController = () => {
   };
   return (
     <div className="gameCentralController">
-      <button onClick={handleBigRedClick}>Big Red</button>
-      <button onClick={handleNextQuestionClick}>Next Question</button>
-      <button onClick={handleDoublePointsClick}>Double points</button>
+      <button onClick={handleBigRedClick} id="bigX">X</button>
+      <button onClick={handleNextQuestionClick}>Next</button>
+      <button onClick={handleDoublePointsClick} id="doublePoints">Double</button>
     </div>
   );
 };

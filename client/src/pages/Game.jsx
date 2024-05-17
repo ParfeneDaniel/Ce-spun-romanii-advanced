@@ -15,17 +15,16 @@ const Game = () => {
     setShowQuestion,
     setShowAnswers,
   } = useGameContext();
+  const isShowClass = showAnswers ? "" : "marginPoints";
+  const classes = `points ${isShowClass}`;
   const handleShowQuestionClick = () => {
     setShowQuestion((prev) => !prev);
   };
   const handleShowAnswersClick = () => {
     setShowAnswers((prev) => !prev);
-  };
+  };  
   return (
     <div className="gameBackground">
-      <div className="points">
-        <h2>{points}</h2>
-      </div>
       <div className="question">
         {showQuestion == false ? (
           <button onClick={handleShowQuestionClick}>Show Question</button>
@@ -33,11 +32,16 @@ const Game = () => {
           <h1>{data[question].question}</h1>
         )}
       </div>
+      <div className={classes}>
+        <h2>{points}</h2>
+      </div>
       <div className="mainGame">
         <GameTeam numberOfTeam={1} />
         <div className="answers">
           {showAnswers == false ? (
-            <button onClick={handleShowAnswersClick}>Show Answers</button>
+            <div className="showAnswer">
+              <button onClick={handleShowAnswersClick}>Show Answers</button>
+            </div>
           ) : (
             <GameAnswers />
           )}

@@ -16,13 +16,13 @@ const GameAnswer = ({ answer, numberOfAnswer }) => {
     <div className="gameAnswer" onClick={handleRevealsClick}>
       {showAnswer == false ? (
         <div className="closeAnswer">
-          <p>{numberOfAnswer + 1}</p>
+          {numberOfAnswer + 1}
         </div>
       ) : (
-        <>
+        <div className="openAnswer">
           <div className="answer">{answer.answer}</div>
           <div className="answerPoints">{answer.points}</div>
-        </>
+        </div>
       )}
     </div>
   );

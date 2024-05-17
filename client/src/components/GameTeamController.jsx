@@ -26,8 +26,8 @@ const GameTeamController = ({ numberOfTeam }) => {
   };
   return (
     <div className="gameTeamController">
-      <button onClick={handleAddRedClick}>Red Team {numberOfTeam}</button>
-      <button onClick={handleAddPointsClick}>Add points to team {numberOfTeam}</button>
+      <button onClick={handleAddRedClick} id="redX">X</button>
+      <button onClick={handleAddPointsClick} id="greenPoints">+</button>
     </div>
   );
 };
