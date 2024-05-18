@@ -448,20 +448,59 @@
 
 .backgroundHome h1 {
   font-size: 100px;
-  margin-bottom: 50px;
+  height: 30%;
 }
 
-.backgroundHome p {
-  font-size: 35px;
+.content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#designer,
-#questionsMakers,
-#host {
-  margin-top: 30px;
+.creators, .button, .helpers {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
 }
 
-#startGame {
+.creators {
+  font-size: 40px;
+}
+
+.helpers {
+  font-size: 25px;
+}
+
+.coder, .designer, .questionsMakers, .host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coder p {
+  color: rgb(255, 255, 255);
+}
+
+.designer p {
+  color: rgb(195, 20, 195);
+}
+
+.questionsMakers p {
+  color: rgb(25, 220, 25);
+}
+
+.questionsMakers {
+  gap: 15px;
+}
+
+.button button {
   margin-top: 30px;
   width: 300px;
   font-size: 30px;
