@@ -170,6 +170,10 @@
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 }
 
+.maxPoints {
+  color: green;
+}
+
 .imageContainer {
   display: flex;
   align-items: center;
@@ -459,7 +463,9 @@
   justify-content: center;
 }
 
-.creators, .button, .helpers {
+.creators,
+.button,
+.helpers {
   width: 33%;
   display: flex;
   align-items: center;
@@ -476,7 +482,10 @@
   font-size: 25px;
 }
 
-.coder, .designer, .questionsMakers, .host {
+.coder,
+.designer,
+.questionsMakers,
+.host {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -11,11 +11,14 @@ const GameTeam = ({ numberOfTeam }) => {
   const currentPoints = teamsPoints[numberOfTeam - 1];
   const currentReds = redsTeam[numberOfTeam - 1];
   const reds = new Array(currentReds).fill(0);
+  const maxPoints = Math.max(...teamsPoints);
+  const minPoints = Math.min(...teamsPoints);
+  const classes = (currentPoints == maxPoints && currentPoints != minPoints) ? "maxPoints" : "";
   return (
     <div className="gameTeam">
       <div className="teamDetails">
         <p id="teamName">{currentTeam}</p>
-        <p>{currentPoints}</p>
+        <p className={classes}>{currentPoints}</p>
       </div>
       <div className="imageContainer">
         {reds.map((_, index) => (
