@@ -433,3 +433,45 @@
   text-shadow: 2px 2px 5px rgba(36, 36, 114, 0.7);
   font-weight: 600;
 }
+
+.backgroundHome {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(36, 36, 114);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(193, 142, 0);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.backgroundHome h1 {
+  font-size: 100px;
+  margin-bottom: 50px;
+}
+
+.backgroundHome p {
+  font-size: 35px;
+}
+
+#designer,
+#questionsMakers,
+#host {
+  margin-top: 30px;
+}
+
+#startGame {
+  margin-top: 30px;
+  width: 300px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  color: white;
+  background-image: linear-gradient(rgb(97, 186, 255), rgb(40, 139, 238));
+  border: 4px solid rgb(52, 167, 255);
+  text-shadow: 2px 2px 5px rgba(36, 36, 114, 0.7);
+  font-weight: 600;
+}

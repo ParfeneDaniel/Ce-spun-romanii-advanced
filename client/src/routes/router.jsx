@@ -2,8 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Round from "../pages/Round";
 import Game from "../pages/Game";
 import Winner from "../pages/Winner";
+import Home from "../pages/Home";
 
 export const router = createBrowserRouter([
+  {
+    path: "",
+    element: <Home />,
+  },
   {
     path: "round",
     element: <Round />,
@@ -14,6 +19,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "winner",
-    element: <Winner />
-  }
+    element: <Winner />,
+  },
 ]);
