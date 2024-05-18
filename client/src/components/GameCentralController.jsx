@@ -47,13 +47,8 @@ const GameCentralController = () => {
     if (consecutive < 2) {
       setConsecutive((prev) => prev + 1);
     } else {
-      setRound((prev) => prev + 1);
-      setTeam1("");
-      setTeam2("");
       setConsecutive(0);
-      setPointsTeam1(0);
-      setPointsTeam2(0);
-      navigate("/round");
+      navigate("/winner");
     }
   };
   return (
