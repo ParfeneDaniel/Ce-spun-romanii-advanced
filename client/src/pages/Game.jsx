@@ -12,10 +12,12 @@ const Game = () => {
     red,
     showQuestion,
     showAnswers,
+    scalePoints,
     setShowQuestion,
     setShowAnswers,
   } = useGameContext();
   const isShowClass = showAnswers ? "" : "marginPoints";
+  const isDoubleClass = scalePoints == 2 ? "doublePoints" : "";
   const classes = `points ${isShowClass}`;
   const handleShowQuestionClick = () => {
     setShowQuestion((prev) => !prev);
@@ -33,7 +35,7 @@ const Game = () => {
         )}
       </div>
       <div className={classes}>
-        <h2>{points}</h2>
+        <h2 id={isDoubleClass}>{points}</h2>
       </div>
       <div className="mainGame">
         <GameTeam numberOfTeam={1} />

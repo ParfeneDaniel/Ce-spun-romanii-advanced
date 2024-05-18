@@ -11,6 +11,7 @@ export const GameContextProvider = ({ children }) => {
   const [team1, setTeam1] = useState("");
   const [team2, setTeam2] = useState("");
   const [points, setPoints] = useState(0);
+  const [addedPoints, setAddedPoints] = useState(false);
   const [question, setQuestion] = useState(0);
   const [consecutive, setConsecutive] = useState(0);
   const [pointsTeam1, setPointsTeam1] = useState(0);
@@ -20,7 +21,7 @@ export const GameContextProvider = ({ children }) => {
   const [red, setRed] = useState(false);
   const [scalePoints, setScalePoints] = useState(1);
   const [showQuestion, setShowQuestion] = useState(false);
-  const [showAnswers, setShowAnswers] = useState(false)
+  const [showAnswers, setShowAnswers] = useState(false);
   const value = {
     round,
     setRound,
@@ -30,6 +31,8 @@ export const GameContextProvider = ({ children }) => {
     setTeam2,
     points,
     setPoints,
+    addedPoints,
+    setAddedPoints,
     question,
     setQuestion,
     consecutive,

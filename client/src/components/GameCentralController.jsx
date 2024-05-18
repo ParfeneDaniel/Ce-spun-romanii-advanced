@@ -4,6 +4,7 @@ import { useGameContext } from "../context/GameContext";
 const GameCentralController = () => {
   const {
     setRed,
+    scalePoints,
     setScalePoints,
     consecutive,
     setConsecutive,
@@ -11,6 +12,7 @@ const GameCentralController = () => {
     setRedsTeam2,
     setQuestion,
     setShowQuestion,
+    showAnswers,
     setShowAnswers,
     setPoints,
     setRound,
@@ -18,13 +20,20 @@ const GameCentralController = () => {
     setTeam2,
     setPointsTeam1,
     setPointsTeam2,
+    setAddedPoints,
   } = useGameContext();
   const navigate = useNavigate();
   const handleBigRedClick = () => {
     setRed((prev) => !prev);
   };
   const handleDoublePointsClick = () => {
-    setScalePoints(2);
+    if (consecutive == 2 && showAnswers == false) {
+      if (scalePoints == 1) {
+        setScalePoints(2);
+      } else {
+        setScalePoints(1);
+      }
+    }
   };
   const handleNextQuestionClick = () => {
     setRedsTeam1(0);
@@ -34,6 +43,7 @@ const GameCentralController = () => {
     setShowAnswers(false);
     setShowQuestion(false);
     setPoints(0);
+    setAddedPoints(false);
     if (consecutive < 2) {
       setConsecutive((prev) => prev + 1);
     } else {
@@ -48,9 +58,13 @@ const GameCentralController = () => {
   };
   return (
     <div className="gameCentralController">
-      <button onClick={handleBigRedClick} id="bigX">X</button>
+      <button onClick={handleBigRedClick} id="bigX">
+        X
+      </button>
       <button onClick={handleNextQuestionClick}>Next</button>
-      <button onClick={handleDoublePointsClick} id="doublePoints">Double</button>
+      <button onClick={handleDoublePointsClick} id="doublePoints">
+        Double
+      </button>
     </div>
   );
 };

@@ -9,6 +9,8 @@ const GameTeamController = ({ numberOfTeam }) => {
     setPointsTeam1,
     setPointsTeam2,
     points,
+    addedPoints,
+    setAddedPoints,
   } = useGameContext();
   const reds = [redsTeam1, redsTeam2];
   const setReds = [setRedsTeam1, setRedsTeam2];
@@ -22,12 +24,19 @@ const GameTeamController = ({ numberOfTeam }) => {
     }
   };
   const handleAddPointsClick = () => {
-    currentSetPoints((prev) => prev + points);
+    if (!addedPoints) {
+      currentSetPoints((prev) => prev + points);
+      setAddedPoints(true);
+    }
   };
   return (
     <div className="gameTeamController">
-      <button onClick={handleAddRedClick} id="redX">X</button>
-      <button onClick={handleAddPointsClick} id="greenPoints">+</button>
+      <button onClick={handleAddRedClick} id="redX">
+        X
+      </button>
+      <button onClick={handleAddPointsClick} id="greenPoints">
+        +
+      </button>
     </div>
   );
 };
