@@ -1159,4 +1159,261 @@ export const data = [
       },
     ],
   },
+  {
+    question: "Ce gasesti in apa si incepe cu litera C?",
+    answers: [
+      {
+        answer: "Clor",
+        points: 31,
+      },
+      {
+        answer: "Coral",
+        points: 19,
+      },
+      {
+        answer: "Crap",
+        points: 11,
+      },
+      {
+        answer: "Caras",
+        points: 9,
+      },
+      {
+        answer: "Crocodil",
+        points: 8,
+      },
+      {
+        answer: "Caracatita",
+        points: 6,
+      },
+      {
+        answer: "Creveti",
+        points: 3,
+      },
+      {
+        answer: "Crab",
+        points: 2,
+      },
+    ],
+  },
+  {
+    question: "Ce e greu de curatat de pe maini, chiar si cu sapun?",
+    answers: [
+      {
+        answer: "Uleiul",
+        points: 28,
+      },
+      {
+        answer: "Vopseaua",
+        points: 18,
+      },
+      {
+        answer: "Vaselina",
+        points: 15,
+      },
+      {
+        answer: "Carioca",
+        points: 10,
+      },
+      {
+        answer: "Cerneala",
+        points: 9,
+      },
+      {
+        answer: "Lipiciul",
+        points: 7,
+      },
+      {
+        answer: "Acuarelele",
+        points: 6,
+      },
+      {
+        answer: "Funinginea",
+        points: 5,
+      },
+    ],
+  },
+  {
+    question:
+      "Ce profesie ai daca folosesti un vocabular cu termeni complicati?",
+    answers: [
+      {
+        answer: "Avocat",
+        points: 45,
+      },
+      {
+        answer: "Medic",
+        points: 21,
+      },
+      {
+        answer: "Profesor",
+        points: 15,
+      },
+      {
+        answer: "Inginer",
+        points: 6,
+      },
+      {
+        answer: "Bancher / Economist",
+        points: 2,
+      },
+      {
+        answer: "Notar",
+        points: 2,
+      },
+      {
+        answer: "Politician",
+        points: 2,
+      },
+      {
+        answer: "Programator",
+        points: 2,
+      },
+    ],
+  },
+  {
+    question: "Ce cadou ii faci unui magician?",
+    answers: [
+      {
+        answer: "Bagheta",
+        points: 45,
+      },
+      {
+        answer: "Joben / Palarie",
+        points: 30,
+      },
+      {
+        answer: "Iepuras",
+        points: 11,
+      },
+      {
+        answer: "Carti de joc",
+        points: 5,
+      },
+      {
+        answer: "Pelerina",
+        points: 4,
+      },
+      {
+        answer: "Porumbei",
+        points: 2,
+      },
+      {
+        answer: "Baloane",
+        points: 2,
+      },
+    ],
+  },
+  {
+    question: "Dupa ce alearga razand un baietel de 5 ani?",
+    answers: [
+      {
+        answer: "Minge",
+        points: 30,
+      },
+      {
+        answer: "Fluturi",
+        points: 29,
+      },
+      {
+        answer: "Caine",
+        points: 10,
+      },
+      {
+        answer: "Balon",
+        points: 9,
+      },
+      {
+        answer: "Pisica",
+        points: 7,
+      },
+      {
+        answer: "Porumbel",
+        points: 5,
+      },
+      {
+        answer: "Zmeu",
+        points: 4,
+      },
+      {
+        answer: "Masinuta",
+        points: 4,
+      },
+    ],
+  },
+  {
+    question:
+      "Cu rabdare, ce obiect din lemn poti invata sa construiesti singur?",
+    answers: [
+      {
+        answer: "Scaun",
+        points: 39,
+      },
+      {
+        answer: "Lingura",
+        points: 16,
+      },
+      {
+        answer: "Masa",
+        points: 12,
+      },
+      {
+        answer: "Jucarie",
+        points: 11,
+      },
+      {
+        answer: "Casa",
+        points: 6,
+      },
+      {
+        answer: "Cusca",
+        points: 5,
+      },
+      {
+        answer: "Dulap",
+        points: 4,
+      },
+      {
+        answer: "Fluier",
+        points: 4,
+      },
+    ],
+  },
+  {
+    question: "Numeste un fel de mancare popular, care contine carne tocata:",
+    answers: [
+      {
+        answer: "Sarmale",
+        points: 48,
+      },
+      {
+        answer: "Ardei umplut",
+        points: 15,
+      },
+      {
+        answer: "Musaca",
+        points: 15,
+      },
+      {
+        answer: "Chiftele",
+        points: 11,
+      },
+      {
+        answer: "Mici",
+        points: 4,
+      },
+      {
+        answer: "Paste",
+        points: 2,
+      },
+      {
+        answer: "Buritto",
+        points: 2,
+      },
+      {
+        answer: "Varza a la Cluj",
+        points: 2,
+      },
+    ],
+  },
 ];
