@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import image from "../assets/cespunghibistii.svg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -8,7 +9,7 @@ const Home = () => {
   return (
     <div className="backgroundHome">
       <div className="title">
-        <h1>Ce spun romanii?</h1>
+        <img src={image} />
       </div>
       <div className="content">
         <div className="creators">
@@ -22,20 +23,22 @@ const Home = () => {
           </div>
         </div>
         <div className="button">
-          <button onClick={handleStartGameClick}>
-            Start game
-          </button>
+          <button onClick={handleStartGameClick}>Start game</button>
         </div>
         <div className="helpers">
-          <div className="questionsMakers">
-            <h3>Helpers:</h3>
+          <div className="managers">
+            <h3>Managers:</h3>
             <p>Ardelean Raul</p>
             <p>Bulzan Ionut</p>
+          </div>
+          <div className="questionsMakers">
+            <h3>Question makers:</h3>
             <p>Schipor Devis</p>
+            <p>Bulzan Ionut</p>
             <p>Todea Alexandra</p>
           </div>
           <div className="host">
-            <h3>Host:</h3>
+            <h3>Cabral:</h3>
             <p>Moț Raul</p>
           </div>
         </div>

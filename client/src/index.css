@@ -161,6 +161,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: rgba(219, 160, 0, .5);
   font-size: 30px;
   gap: 15px;
 }
@@ -168,10 +169,12 @@
 #teamName {
   font-size: 35px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+  color: rgb(219, 160, 0);
 }
 
 .maxPoints {
-  color: rgb(25, 235, 25);
+  color: rgb(219, 160, 0);
+  font-size: 33px;
 }
 
 .imageContainer {
@@ -450,14 +453,21 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
-.backgroundHome h1 {
-  font-size: 100px;
+.title {
   height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title img {
+  width: 70%;
+  height: 100%;
 }
 
 .content {
   width: 100%;
-  height: 70%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -485,7 +495,8 @@
 .coder,
 .designer,
 .questionsMakers,
-.host {
+.host,
+.managers {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -494,15 +505,20 @@
 }
 
 .coder p {
-  color: rgb(255, 255, 255);
+  color: rgb(78, 208, 255);
 }
 
 .designer p {
-  color: rgb(195, 20, 195);
+  color: rgb(163, 88, 255);
+}
+
+.managers p {
+  color: rgb(209, 201, 61);
+  font-size: 30px;
 }
 
 .questionsMakers p {
-  color: rgb(25, 220, 25);
+  color: rgb(255, 130, 40);
 }
 
 .questionsMakers {
